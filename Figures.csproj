@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Figures\BBishop.png" />
+    <None Remove="Figures\BKing.png" />
+    <None Remove="Figures\BKnight.png" />
+    <None Remove="Figures\BPawn.png" />
+    <None Remove="Figures\BQueen.png" />
+    <None Remove="Figures\BRook.png" />
+    <None Remove="Figures\WBishop.png" />
+    <None Remove="Figures\WKing.png" />
+    <None Remove="Figures\WKnight.png" />
+    <None Remove="Figures\WPawn.png" />
+    <None Remove="Figures\WQueen.png" />
+    <None Remove="Figures\WRook.png" />
+    <None Remove="Images\IMG_0901.jpg" />
+    <None Remove="Images\IMG_0902.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Figures\BBishop.png" />
+    <Resource Include="Figures\BKing.png" />
+    <Resource Include="Figures\BKnight.png" />
+    <Resource Include="Figures\BPawn.png" />
+    <Resource Include="Figures\BQueen.png" />
+    <Resource Include="Figures\BRook.png" />
+    <Resource Include="Figures\WBishop.png" />
+    <Resource Include="Figures\WKing.png" />
+    <Resource Include="Figures\WKnight.png" />
+    <Resource Include="Figures\WPawn.png" />
+    <Resource Include="Figures\WQueen.png" />
+    <Resource Include="Figures\WRook.png" />
+    <Resource Include="Images\IMG_0901.jpg" />
+    <Resource Include="Images\IMG_0902.jpg" />
+  </ItemGroup>
+
+</Project>
