@@ -6,10 +6,15 @@
         xmlns:local="clr-namespace:Figures"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1200">
-    <Grid Background="#BA9476">
+    <Grid Background="#FF8E6B52">
+        <Grid >
+            <Image x:Name="board"  Width="600" Height="600" Margin="98,92,502,92" Source="/Images/IMG_0901.jpg" Stretch="Fill" d:IsLocked="True"/>
+            <Canvas Margin="137,136,546,135">
+                <Image x:Name="f" Width="50" Height="50" Canvas.Left="-50" Canvas.Top="-50"/>
+            </Canvas>
+        </Grid>
         <Label Name="X" Content="X" HorizontalAlignment="Left" Margin="902,66,0,0" VerticalAlignment="Top" FontSize="22"/>
         <Label Name ="Y" Content="Y" HorizontalAlignment="Left" Margin="1017,66,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Image Name="board"  Width="600" Height="600"  Margin="98,92,502,92" Source="/Images/IMG_0901.jpg" Stretch="Fill"/>
         <ComboBox Name="Color" HorizontalAlignment="Left" Margin="902,194,0,0" VerticalAlignment="Top" Width="120" >
             <ComboBoxItem>White</ComboBoxItem>
             <ComboBoxItem>Black</ComboBoxItem>
@@ -24,8 +29,5 @@
         </ComboBox>
         <TextBox Name="XCoord" HorizontalAlignment="Left" Margin="902,300,0,0" TextWrapping="Wrap" Text="XCoord" VerticalAlignment="Top" Width="120" />
         <TextBox Name="YCoord" HorizontalAlignment="Left" Margin="902,346,0,0" TextWrapping="Wrap" Text="YCoord" VerticalAlignment="Top" Width="120"/>
-        <Canvas>
-            <Image x:Name="f" Width="50" Height="50" Margin="532,405,618,329"/>
-            </Canvas>
     </Grid>
 </Window>

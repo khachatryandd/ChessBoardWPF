@@ -26,8 +26,11 @@ namespace Figures
         private void Board_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Point point = e.GetPosition(board);
-            X.Content = $"X: {Math.Truncate(point.X)}";
-            Y.Content = $"Y: {Math.Truncate(point.Y)}";
+            //X.Content = $"X: {Math.Truncate(point.X)}";
+            //Y.Content = $"Y: {Math.Truncate(point.Y)}";
+           
+            f.Margin = new Thickness(Math.Truncate(point.X), Math.Truncate(point.Y),0,0);
+
             SelectImage(((ComboBoxItem)Color.SelectedItem)?.Content.ToString(), ((ComboBoxItem)Figure.SelectedItem)?.Content.ToString());
         }
         //private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
